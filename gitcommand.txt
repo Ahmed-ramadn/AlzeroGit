@@ -3,6 +3,7 @@
 ## to create folder >> mkdir "folder name"                                                            ##
 ## to show folder cont >> dir                                                                         ##
 
+# git command
 # project call "reposetry" or "repo"
 # spacific part in project called "branch"
 # two area >>(local,server)
