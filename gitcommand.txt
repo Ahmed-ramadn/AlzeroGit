@@ -1,0 +1,9 @@
+# two area >>(local,server)
+## to take copy from project  >> git clone 'url'                                                      ##
+# before send to server from local >> test,ready,upload
+# test "make file ready can delete or add file "
+## to see state of file that send or not  >> git status                                               ##
+## to add file >> git add 'file name','*' "to send all",'first file name 'space' second file name     ##
+# to delete file >> git reset head "can delete" 'file name'    
+# ready  "state before send to server"                                    
+## to make commit "make file ready to send ">> git commit -m "describtion"                            ##
