@@ -17,3 +17,6 @@
 ## to see branch in repo >> git branch                                                                ##
 ## to get remote name >> git remote -v                                                                ##
 ## to push commit >> git push 'remote name' 'branch name'                                             ##
+
+# get using pull from server  >> "get data and merge it with file in local"
+## to get repo from server >> git pull origine                                                        ##
