@@ -10,5 +10,5 @@
 # ready  "state before send to server"                                    
 ## to make commit "make file ready to send ">> git commit -m "describtion"                            ##
 ## to see branch in repo >> git branch                                                                ##
-## to get remote name >> git remote -v								                                                ##
+## to get remote name >> git remote -v                                                                ##
 ## to push commit >> git push 'remote name' 'branch name'                                             ##
