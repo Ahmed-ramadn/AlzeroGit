@@ -1,11 +1,18 @@
+# public command
+## to open new file >> touch "filename.extintion"                                                     ##
+## to create folder >> mkdir "folder name"                                                            ##
+## to show folder cont >> dir                                                                         ##
+
 # project call "reposetry" or "repo"
 # spacific part in project called "branch"
 # two area >>(local,server)
 
+## to get about help command >> git help "command > 'config'"                                         ## 
+
 ## to take copy from project  >> git clone 'url'                                                      ##
 
 # before send to server from local >> statage,ready,upload
-# statage"make file ready can delete or add file "
+# statage "make file ready can delete or add file "
 ## to see state of file that send or not  >> git status                                               ##
 ## to add file >> git add 'file name','*' "to send all",'first file name 'space' second file name     ##
 # to delete file >> git reset head "can delete" 'file name'    
@@ -20,3 +27,19 @@
 
 # get using pull from server  >> "get data and merge it with file in local"
 ## to get repo from server >> git pull origine                                                        ##
+
+# config 
+## to get config info >>  git config -l                                                               ##
+## to show from command get config >> git config -l --show-origin                                     ##
+## to get config help >> git help config                                                              ##
+## to get or add user name in config >> git config --global user.name "user name"                     ##
+## to get or add email name in config >> git config --global user.email "user email"                  ##
+## to delete email or user in config >> git config --global --unset "user.name,user.email"            ##
+## to open gui for edit config >> git config --global --edit                                          ##
+
+
+
+
+
+
+
