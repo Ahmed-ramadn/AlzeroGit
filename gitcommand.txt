@@ -1,3 +1,5 @@
+# project call "reposetry" or "repo"
+# spacific part in project called "branch"
 # two area >>(local,server)
 ## to take copy from project  >> git clone 'url'                                                      ##
 # before send to server from local >> test,ready,upload
@@ -7,3 +9,6 @@
 # to delete file >> git reset head "can delete" 'file name'    
 # ready  "state before send to server"                                    
 ## to make commit "make file ready to send ">> git commit -m "describtion"                            ##
+## to see branch in repo >> git branch                                                                ##
+## to get remote name >> git remote -v								      ##
+## to push commit >> git push 'remote name' 'branch name'
