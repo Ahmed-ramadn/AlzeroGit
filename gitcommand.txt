@@ -1,46 +1,74 @@
 # public command
-## to open new file >> touch "filename.extintion"                                                     ##
-## to create folder >> mkdir "folder name"                                                            ##
-## to show folder cont >> dir                                                                         ##
+## to open new file >> touch "filename.extintion"                                                                              ##
+## to create folder >> mkdir "folder name"                                                                                     ##
+## to show folder cont >> dir                                                                                                  ##
+## to see cont of any file >> cat 'file name'                                                                                  ##
+## to create file and write on it >> echo "words " > 'filename.extention'
+## to get folder con in list >> ls
 
 # git command
 # project call "reposetry" or "repo"
 # spacific part in project called "branch"
 # two area >>(local,server)
 
-## to get about help command >> git help "command > 'config'"                                         ## 
+## to get about help command >> git help "command > 'config'"                                                                  ## 
 
-## to take copy from project  >> git clone 'url'                                                      ##
+## to take copy from project  >> git clone 'url'                                                                               ##
 
 # before send to server from local >> statage,ready,upload
 # statage "make file ready can delete or add file "
-## to see state of file that send or not  >> git status                                               ##
-## to add file >> git add 'file name','*' "to send all",'first file name 'space' second file name     ##
+## to see state of file that send or not  >> git status                                                                        ##
+## to add file >> git add 'file name','*' "to send all",'first file name 'space' second file name                              ##
 # to delete file >> git reset head "can delete" 'file name'    
 
 # ready  "state before send to server"                                    
-## to make commit "make file ready to send ">> git commit -m "describtion"                            ##
+## to make commit "make file ready to send ">> git commit -m "describtion"                                                     ##
 
 # upload
-## to see branch in repo >> git branch                                                                ##
-## to get remote name >> git remote -v                                                                ##
-## to push commit >> git push 'remote name' 'branch name'                                             ##
+## to see branch in repo >> git branch                                                                                         ##
+## to get remote name >> git remote -v                                                                                         ##
+## to push commit >> git push 'remote name' 'branch name'                                                                      ##
 
 # get using pull from server  >> "get data and merge it with file in local"
-## to get repo from server >> git pull origine                                                        ##
+## to get repo from server >> git pull origine                                                                                 ##
 
 # config 
-## to get config info >>  git config -l                                                               ##
-## to show from command get config >> git config -l --show-origin                                     ##
-## to get config help >> git help config                                                              ##
-## to get or add user name in config >> git config --global user.name "user name"                     ##
-## to get or add email name in config >> git config --global user.email "user email"                  ##
-## to delete email or user in config >> git config --global --unset "user.name,user.email"            ##
-## to open gui for edit config >> git config --global --edit                                          ##
+## to get config info >>  git config -l                                                                                        ##
+## to show where command get config >> git config -l --show-origin                                                              ##
+## to get config help >> git help config                                                                                       ##
+## to get or add user name in config >> git config --global user.name "user name"                                              ##
+## to get or add email name in config >> git config --global user.email "user email"                                           ##
+## to delete email or user in config >> git config --global --unset "user.name,user.email"                                     ##
+## to open gui for edit config >> git config --global --edit                                                                   ##
 
+# to make authrtion easy by using public key or secure shell"ssh"
+# "rsa" >> used to genrate public and privte key
+## creating public key or ssh >> ssh-keygen -t encryption method>rsa,aes,des' -b 'number of bit>4096,..' -C 'email used for'   ##
+## to connict using public key >> ssh -T git@github.com                                                                        ##
 
+# create new repo using ssh and local
+## to create new repo >> git init
+## to connect repo with github >> git remote add origin 'server name ":" user name "/" repo name'>git@github:Ahmed-ramadn/new.get ##
+## to upload repo >> git push -u>"pull and push" 'remote name' 'branch name'
 
+## to make alias for long command >> git config --global alias.'alias name' 'command or "for multi command "'
 
+# branch
+## to create branch >> git branch 'branch name' // git checkout -b 'branch name'  
+## to delete branch >> git branch -d"check if there are changes" // git branch -D"force delete" 'branch name'
+## to move to branch >> git checkout 'branch name'
+## to rename branch >> git branch -m 'new branch name'  
+## to merge two branches >> git merge 'branch name'  "merge will be added to main branch where i am in"
+# there are two ways to push 
+# 1-in master no pull request need ro merge
+# 2-in new branch required request no need to merge
 
-
-
+# hide file from send
+## to hide file >> git stash "file muts be added but not commited yet"
+## to show list in stash >> git stash list
+## to get hidden file in stash >> git stash pop"restore all file in list"last added" and delete list " // git stash apply"restore all file in list"last added" but list didn't deleted"
+## to get spacific list >> git stash pop/apply stash@{index}
+## to hide file with lable >> git stash save "list name"
+## to delete list"with file in" >> git stash drop"last added" // git stash drop stash@{index}
+## to show con of list >> git stash show // git stash show stash@{index}  
+## to delete all list in stash >> git stash clear
