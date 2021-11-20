@@ -11,8 +11,10 @@
 # spacific part in project called "branch"
 # two area >>(local,server)
 
+# help
 ## to get about help command >> git help "command > 'config'"                                                                  ## 
 
+# copy to local from server
 ## to take copy from project  >> git clone 'url'                                                                               ##
 
 # before send to server from local >> statage,ready,upload
@@ -30,11 +32,11 @@
 ## to push commit >> git push 'remote name' 'branch name'                                                                      ##
 
 # get using pull from server  >> "get data and merge it with file in local"
-## to get repo from server >> git pull origine                                                                                 ##
+## to get repo from server >> git pull 'remote' 'branch'                                                                       ##
 
 # config 
 ## to get config info >>  git config -l                                                                                        ##
-## to show where command get config >> git config -l --show-origin                                                              ##
+## to show where command get config >> git config -l --show-origin                                                             ##
 ## to get config help >> git help config                                                                                       ##
 ## to get or add user name in config >> git config --global user.name "user name"                                              ##
 ## to get or add email name in config >> git config --global user.email "user email"                                           ##
@@ -44,13 +46,14 @@
 # to make authrtion easy by using public key or secure shell"ssh"
 # "rsa" >> used to genrate public and privte key
 ## creating public key or ssh >> ssh-keygen -t encryption method>rsa,aes,des' -b 'number of bit>4096,..' -C 'email used for'   ##
-## to connict using public key >> ssh -T git@github.com                                                                        ##
+## to connect using public key >> ssh -T git@github.com                                                                        ##
 
 # create new repo using ssh and local
 ## to create new repo >> git init
 ## to connect repo with github >> git remote add origin 'server name ":" user name "/" repo name'>git@github:Ahmed-ramadn/new.get ##
 ## to upload repo >> git push -u>"pull and push" 'remote name' 'branch name'
 
+# to make short command
 ## to make alias for long command >> git config --global alias.'alias name' 'command or "for multi command "'
 
 # branch
@@ -59,8 +62,9 @@
 ## to move to branch >> git checkout 'branch name'
 ## to rename branch >> git branch -m 'new branch name'  
 ## to merge two branches >> git merge 'branch name'  "merge will be added to main branch where i am in"
+
 # there are two ways to push 
-# 1-in master no pull request need ro merge
+# 1-in master no pull request need to merge
 # 2-in new branch required request no need to merge
 
 # hide file from send
@@ -72,3 +76,17 @@
 ## to delete list"with file in" >> git stash drop"last added" // git stash drop stash@{index}
 ## to show con of list >> git stash show // git stash show stash@{index}  
 ## to delete all list in stash >> git stash clear
+
+# delete commiet,force push,unstage,log,delete files
+## to delete files from folder >> git clean -n"show files will delete" // git clean -f "files that not in stage will deleted only"
+## to unstage file >> git restore --staged 'file name' or *
+## to delete commit >> git reset --hard"force delete" 'head pointer delete all back'
+## to force puch >> git push origin main --force
+## to see log of commit >> git log "Q to get out of this command" 
+
+#ignore 
+## to ignore file,folder,all extention >> create file '.gitignore' open with 'vs code' 
+>*.log >> will ignore all extintion end with '.log' // '!'vib.log will be unhide
+>folder >> will ignore whole folder
+>text.txt >> will ignore this file
+## to force add if ignore >> git add '--force'or'-f' 'filename'  
